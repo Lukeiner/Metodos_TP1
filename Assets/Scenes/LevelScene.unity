@@ -44085,8 +44085,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4850161331088109135, guid: fab7071a9be3c764ca6a8d1ab4b5c02e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 740421832678941102}
   m_SourcePrefab: {fileID: 100100000, guid: fab7071a9be3c764ca6a8d1ab4b5c02e, type: 3}
+--- !u!1 &740421832678941101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4850161331088109135, guid: fab7071a9be3c764ca6a8d1ab4b5c02e, type: 3}
+  m_PrefabInstance: {fileID: 740421832678941100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &740421832678941102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740421832678941101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d951b5eac42f0d046bb9aa6b11cb790a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChaserNPC
+  playerTransform: {fileID: 5663344490531047686}
+  maxSpeed: 5
+  maxForce: 10
+  detectionRadius: 6
+  arriveRadius: 1.5
+  wanderCircleDistance: 2
+  wanderCircleRadius: 1
+  wanderJitter: 1
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  wallCheckDistance: 1
+  wallAvoidanceWeight: 5
+  sideRayAngle: 35
 --- !u!1 &933322628031800509
 GameObject:
   m_ObjectHideFlags: 0
