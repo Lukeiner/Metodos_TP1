@@ -119,6 +119,34 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &147011582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4080913331580703680, guid: 60cd851b645af1844b2af5e3b09c19fa, type: 3}
+  m_PrefabInstance: {fileID: 8891064875211047159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &147011586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147011582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3539c54c4f52204a860546f2c6b9fc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WandererNPC
+  maxSpeed: 3
+  steeringForce: 5
+  wanderRadius: 1
+  wanderDistance: 2
+  wanderJitter: 1
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 8
+  detectionDistance: 1
+  whiskerAngle: 30
+  avoidanceForce: 15
 --- !u!1 &177484468
 GameObject:
   m_ObjectHideFlags: 0
@@ -44976,7 +45004,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4080913331580703680, guid: 60cd851b645af1844b2af5e3b09c19fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 147011586}
   m_SourcePrefab: {fileID: 100100000, guid: 60cd851b645af1844b2af5e3b09c19fa, type: 3}
 --- !u!212 &8926212909213701619
 SpriteRenderer:
