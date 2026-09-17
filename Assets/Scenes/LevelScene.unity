@@ -41504,7 +41504,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -41742,7 +41742,7 @@ GameObject:
   - component: {fileID: 1921430908}
   - component: {fileID: 1921430907}
   - component: {fileID: 1921430906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44108,8 +44108,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChaserNPC
   playerTransform: {fileID: 5663344490531047686}
-  maxSpeed: 5
-  maxForce: 10
+  maxSpeed: 3
+  maxForce: 50
   detectionRadius: 6
   arriveRadius: 1.5
   wanderCircleDistance: 2

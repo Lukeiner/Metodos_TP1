@@ -113,7 +113,7 @@ public class ChaserNPC : MonoBehaviour
         force = Vector2.ClampMagnitude(force, maxForce);
 
         currentVelocity = Vector2.ClampMagnitude(currentVelocity + force * Time.fixedDeltaTime, maxSpeed);
-        rb.linearVelocity = currentVelocity;
+        rb.linearVelocity = currentVelocity * maxSpeed;
     }
 
     private void OnDrawGizmosSelected()
