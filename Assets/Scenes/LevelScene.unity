@@ -44189,8 +44189,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4315039472783121028, guid: eb23a736ba534894cac2b5b06fe1ce32, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1509090093040980672}
   m_SourcePrefab: {fileID: 100100000, guid: eb23a736ba534894cac2b5b06fe1ce32, type: 3}
+--- !u!1 &1509090093040980671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4315039472783121028, guid: eb23a736ba534894cac2b5b06fe1ce32, type: 3}
+  m_PrefabInstance: {fileID: 1509090093040980670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1509090093040980672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509090093040980671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eebbb67f9289e946abd50e331c4b7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CowardNPC
+  moveSpeed: 3
+  fleeSpeed: 5
+  detectionRadius: 4
+  changeDirectionInterval: 2
 --- !u!1 &1636765720139997184
 GameObject:
   m_ObjectHideFlags: 0
