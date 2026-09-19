@@ -12,13 +12,9 @@ public class WandererNPC : MonoBehaviour
     public float wanderJitter = 2.0f;
 
     [Header("Wall Avoidance Settings")]
-    [Tooltip("Capa que representan las paredes/obstáculos.")]
     public LayerMask wallMask;
-    [Tooltip("Distancia del raycast frontal.")]
     public float detectionDistance = 1.5f;
-    [Tooltip("Ángulo de los raycasts diagonales (en grados).")]
     public float whiskerAngle = 30f;
-    [Tooltip("Fuerza con la que rebota al detectar pared.")]
     public float avoidanceForce = 15.0f;
 
     private float wanderAngle;
@@ -27,7 +23,7 @@ public class WandererNPC : MonoBehaviour
     private void Start()
     {
         wanderAngle = Random.Range(0, 360f);
-        velocity = transform.up * maxSpeed; // Empieza moviéndose hacia adelante
+        velocity = transform.up * maxSpeed; 
     }
 
     private void Update()
@@ -73,7 +69,7 @@ public class WandererNPC : MonoBehaviour
         Vector2[] rayDirections = new Vector2[3];
         rayDirections[0] = currentDir; 
         rayDirections[1] = Quaternion.Euler(0, 0, whiskerAngle) * currentDir;  
-        rayDirections[2] = Quaternion.Euler(0, 0, -whiskerAngle) * currentDir; /
+        rayDirections[2] = Quaternion.Euler(0, 0, -whiskerAngle) * currentDir; 
 
         foreach (Vector2 dir in rayDirections)
         {
